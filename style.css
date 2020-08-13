@@ -13,6 +13,7 @@
   --color-light-blue: #5fa6e0;
   --color-blue: #4396da;
   --color-dark-blue: #267dc4;
+  --color-indigo: #0b2236;
   --color-purple: #6a41e4;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
@@ -140,7 +141,7 @@ button {
   display: flex;
 }
 
-.navbar__menu__item {
+.menu__item {
   padding: 4px 12px;
   margin: 0 12px;
   font-size: var(--font-regular);
@@ -148,7 +149,7 @@ button {
   cursor: pointer;
 }
 
-.navbar__menu__item:hover {
+.menu__item:hover {
   color: var(--color-pink);
   transition: 300ms linear;
 }
@@ -157,7 +158,7 @@ button {
 
 #about {
   text-align: center;
-  margin: 80px 0px;
+  padding: 120px 0px;
 }
 
 .about__majors {
@@ -263,7 +264,7 @@ button {
 #project {
   background-color: var(--color-light-white);
   text-align: center;
-  padding: 80px 0px;
+  padding: 120px 0px;
 }
 
 .project__majors {
@@ -317,5 +318,36 @@ button {
 .major__button:hover {
   color: var(--color-white);
   background-color: var(--color-pink);
+  transition: 300ms linear;
+}
+
+/* Contact */
+
+#contact {
+  background-color: var(--color-indigo);
+  text-align: center;
+  padding: 120px 0px;
+}
+
+.contact__header h1 {
+  color: var(--color-white);
+}
+
+#contact h2 {
+  color: var(--color-white);
+  margin: 50px 0px;
+}
+
+.contact__page {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__page i {
+  margin: 30px;
+}
+
+.contact__page i:hover {
+  color: var(--color-dark-pink);
   transition: 300ms linear;
 }

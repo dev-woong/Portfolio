@@ -13,24 +13,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    
   </head>
   <body>
     
 
     <!-- Home -->
     <section id="home">
-      <h1 class="home__title">개발자 최웅철의 포트폴리오 페이지입니다.</h1>
+      <h1 class="home__title">개발자 최웅철의 포트폴리오입니다.</h1>
       <button class="home__contact">Contact me</button>
     </section>
 
     <!-- Navbar -->
     <nav id="navbar">
       <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Project</li>
-        <li class="navbar__menu__item">Contact</li>
+        <li class="menu__item" data-link="#home">Home</li>
+        <li class="menu__item" data-link="#about">About</li>
+        <li class="menu__item" data-link="#project">Project</li>
+        <li class="menu__item" data-link="#contact">Contact</li>
       </ul>
     </nav>
 
@@ -38,6 +38,7 @@
     <section id="about">
       <div class="about__header">
         <h1>ABOUT</h1></div>
+        <div class="header__underline"></div>
       <div class="about__majors">
         <div class="major">
           <div class="major__icon"><i class="fab fa-html5 fa-3x"></i></div>
@@ -149,6 +150,15 @@
     </div>
     </section>
     <!-- Contact -->
-    <section id="contact"></section>
+    <section id="contact">
+      <div class="contact__header"><h1>CONTACT</h1></div>
+      <h2>dev_woong@naver.com</h2>
+      <div class="contact__page">
+        <div id="contact__git"><a href="#"><i class="fab fa-github fa-4x"></i></a></div>
+        <div id="contact__linkedIn"><a href="#"><i class="fab fa-linkedin fa-4x"></i></a></div>
+      </div>
+      <h2>THANKS!</h2>
+    </section> 
   </body>
+  <script src="main.js" defer></script>
 </html>
