@@ -98,6 +98,106 @@ button {
   outline: none;
 }
 
+/* Animation */
+
+@keyframes navSlideIn {
+  from {
+    top: -200px;
+  }
+
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    left: 20vw;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    right: 20vw;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sizeUp {
+  0% {
+    transform: scale(0.1);
+    top: 20vw;
+  }
+  100% {
+    transform: scale(1);
+    top: 0vw;
+  }
+}
+
+@keyframes graph50 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes graph60 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes graph70 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes graph80 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes graph90 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
 /* Home */
 
 #home {
@@ -137,6 +237,14 @@ button {
   border-bottom: solid 6px var(--color-light-blue);
 }
 
+#navbar.navbar--dark {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+  animation: navSlideIn 500ms 1;
+}
+
 .navbar__menu {
   display: flex;
 }
@@ -161,6 +269,25 @@ button {
   padding: 120px 0px;
 }
 
+.about__header {
+  position: relative;
+  opacity: 0;
+}
+
+.about__header--dark {
+  opacity: 1;
+  animation: slideInFromLeft 1s 1;
+}
+
+.header__underline {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  margin-left: -40px;
+  border-top: solid 5px var(--color-dark-grey);
+}
+
 .about__majors {
   display: flex;
   justify-content: center;
@@ -175,7 +302,19 @@ button {
   height: 100px;
   background-color: var(--color-light-blue);
   position: relative;
+  opacity: 0;
 }
+
+.about__majors .major__title {
+  opacity: 0;
+}
+
+.about__majors--dark .major__icon,
+.about__majors--dark .major__title {
+  animation-name: fadeIn;
+  opacity: 1;
+}
+
 .major__icon:before {
   content: "";
   position: absolute;
@@ -215,9 +354,16 @@ button {
 }
 
 .me__description {
+  position: relative;
+  opacity: 0;
   height: 415px;
   width: 500px;
   padding: 0px 24px;
+}
+
+.me__description--dark {
+  opacity: 1;
+  animation: slideInFromLeft 1s 1;
 }
 
 .me__description img {
@@ -227,9 +373,38 @@ button {
 }
 
 .me__skill {
+  position: relative;
   height: 415px;
   width: 500px;
   line-height: 32px;
+  opacity: 0;
+}
+
+.me__skill--dark {
+  opacity: 1;
+  animation: slideInFromRight 1s 1;
+}
+
+.me__skill--dark #skill__HTML,
+.me__skill--dark #skill__CSS {
+  animation: graph90 2000ms 1;
+}
+
+.me__skill--dark #skill__Javascript {
+  animation: graph80 2000ms 1;
+}
+
+.me__skill--dark #skill__Java,
+.me__skill--dark #skill__C {
+  animation: graph70 2000ms 1;
+}
+
+.me__skill--dark #skill__Oracle {
+  animation: graph60 2000ms 1;
+}
+
+.me__skill--dark #skill__React {
+  animation: graph50 2000ms 1;
 }
 
 .skill__bar {
@@ -267,6 +442,16 @@ button {
   padding: 120px 0px;
 }
 
+.project__header {
+  position: relative;
+  opacity: 0;
+}
+
+.project__header--dark {
+  opacity: 1;
+  animation: slideInFromRight 1s 1;
+}
+
 .project__majors {
   display: flex;
   justify-content: center;
@@ -278,6 +463,12 @@ button {
   position: relative;
   text-align: center;
   margin: 100px 20px;
+  opacity: 0;
+}
+
+.project__majors--dark .major {
+  opacity: 1;
+  animation: sizeUp 1s 1;
 }
 
 .project__majors .major:hover .major__cover {
@@ -326,16 +517,39 @@ button {
 #contact {
   background-color: var(--color-indigo);
   text-align: center;
-  padding: 120px 0px;
+  padding: 80px 0px;
+}
+
+.contact__header {
+  position: relative;
+  opacity: 0;
+}
+
+.contact__header--dark {
+  opacity: 1;
+  animation: slideInFromLeft 1s 1;
+}
+
+.contact__info {
+  position: relative;
+  opacity: 0;
+}
+.contact__info--dark {
+  opacity: 1;
+  animation: sizeUp 1s 1;
 }
 
 .contact__header h1 {
   color: var(--color-white);
 }
 
+.contact__header .header__underline {
+  border-color: var(--color-white);
+}
+
 #contact h2 {
   color: var(--color-white);
-  margin: 50px 0px;
+  margin: 100px 0px;
 }
 
 .contact__page {
