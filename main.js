@@ -75,3 +75,18 @@ document.addEventListener("scroll", () => {
     contactInfo.classList.add("contact__info--dark")
   }
 })
+
+// scrolling을 아래로 내리면 arrow up 버튼을 나타나게 함
+const arrowUp = document.querySelector(".arrow-up")
+document.addEventListener("scroll", () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add("visible")
+  } else {
+    arrowUp.classList.remove("visible")
+  }
+})
+
+// arrow up  버튼 클릭 시 scrolling
+arrowUp.addEventListener("click", () => {
+  scrollIntoView("#home")
+})
