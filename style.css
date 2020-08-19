@@ -666,10 +666,25 @@ button {
     margin: 20px;
     font-size: 40px;
   }
+
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+  }
 }
 
 /* small screen*/
 @media screen and (max-width: 724px) {
+  .home__title {
+    font-size: 4vw;
+  }
+
+  .home__contact {
+    font-size: var(--font-small);
+    padding: 6px 8px;
+  }
+
   #navbar {
     position: relative;
     flex-direction: clumn;
@@ -695,5 +710,37 @@ button {
 
   .navbar__menu.open {
     display: block;
+  }
+
+  .skill__bar {
+    height: 24px;
+  }
+
+  .skill__value {
+    height: 24px;
+  }
+
+  .skill__name {
+    height: 24px;
+  }
+
+  .skill__name h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .skill__bar span {
+    display: none;
+    font-size: 8px;
+  }
+
+  .major__button {
+    margin: 1vh 24px;
+  }
+
+  .arrow-up {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
   }
 }
