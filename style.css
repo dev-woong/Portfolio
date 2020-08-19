@@ -262,9 +262,19 @@ button {
   transition: 300ms linear;
 }
 
+.navbar__toggle-btn {
+  position: relative;
+  font-size: 32px;
+  margin-top: 16px;
+  color: var(--color-white);
+  right: 30px;
+  display: none;
+}
+
 /* About */
 
 #about {
+  position: relative;
   text-align: center;
   padding: 120px 0px;
 }
@@ -291,6 +301,7 @@ button {
 .about__majors {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .major {
@@ -378,6 +389,7 @@ button {
   width: 500px;
   line-height: 32px;
   opacity: 0;
+  padding: 0px 24px;
 }
 
 .me__skill--dark {
@@ -559,6 +571,7 @@ button {
 
 .contact__page i {
   margin: 30px;
+  font-size: 80px;
 }
 
 .contact__page i:hover {
@@ -585,4 +598,102 @@ button {
 .arrow-up.visible {
   opacity: 1;
   pointer-events: all;
+}
+
+/* medium screen*/
+@media screen and (max-width: 956px) {
+  h1 {
+    font-size: var(--font-medium);
+  }
+
+  h2 {
+    font-size: var(--font-regular);
+  }
+
+  #about {
+    margin-top: 100px;
+    padding: 60px 0px;
+  }
+
+  .about__majors {
+    flex-wrap: wrap;
+  }
+
+  .about__majors .major {
+    flex: 1 1 41%;
+    margin: 30px auto;
+  }
+
+  .about__majors .major__icon {
+    margin: 0px auto;
+  }
+
+  .me__description,
+  .me__skill {
+    width: 100%;
+  }
+
+  .skill__bar {
+    margin: 0px auto 12px auto;
+    width: 80%;
+  }
+
+  .about__me {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #project {
+    padding: 60px 0px;
+  }
+
+  .project__majors {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project__majors .major {
+    height: 60vw;
+    width: 60vw;
+    margin: 20px auto;
+  }
+
+  #contact h2 {
+    margin: 50px 0px;
+  }
+
+  .contact__page i {
+    margin: 20px;
+    font-size: 40px;
+  }
+}
+
+/* small screen*/
+@media screen and (max-width: 724px) {
+  #navbar {
+    position: relative;
+    flex-direction: clumn;
+    align-items: flex-start;
+    padding: 0px;
+    height: 50px;
+    width: 100%;
+  }
+  .navbar__toggle-btn {
+    display: block;
+    position: absolute;
+    top: -10px;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: var(--color-dark-blue);
+    padding-bottom: 20px;
+    display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
 }

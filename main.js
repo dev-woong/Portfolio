@@ -16,6 +16,12 @@ navbarMenu.addEventListener("click", (event) => {
   scrollIntoView(link)
 })
 
+//navbar toggle 버튼 클릭
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn")
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open")
+})
+
 // home의 contact 버튼 클릭 시 scrolling
 const homeContactBtn = document.querySelector(".home__contact")
 homeContactBtn.addEventListener("click", () => {
@@ -70,7 +76,7 @@ document.addEventListener("scroll", () => {
     projectMajors.classList.add("project__majors--dark")
   }
 
-  if (window.scrollY > contactHeaderTop - homeHeight / 2) {
+  if (window.scrollY > contactHeaderTop - (homeHeight * 3) / 4) {
     contactHeader.classList.add("contact__header--dark")
     contactInfo.classList.add("contact__info--dark")
   }
