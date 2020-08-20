@@ -50,6 +50,7 @@ const home = document.querySelector("#home"),
 document.addEventListener("scroll", () => {
   console.log(window.scrollY)
   if (window.scrollY > homeHeight) {
+    console.log("homeHeight : ", homeHeight)
     navbar.classList.add("navbar--dark")
   } else {
     navbar.classList.remove("navbar--dark")
@@ -96,5 +97,3 @@ document.addEventListener("scroll", () => {
 arrowUp.addEventListener("click", () => {
   scrollIntoView("#home")
 })
-
-//test git test
