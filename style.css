@@ -407,15 +407,15 @@ button {
 }
 
 .me__skill--dark #skill__Java,
-.me__skill--dark #skill__C {
+.me__skill--dark #skill__React {
   animation: graph70 2000ms 1;
 }
 
-.me__skill--dark #skill__Oracle {
+.me__skill--dark #skill__C {
   animation: graph60 2000ms 1;
 }
 
-.me__skill--dark #skill__React {
+.me__skill--dark #skill__Oracle {
   animation: graph50 2000ms 1;
 }
 
@@ -512,7 +512,7 @@ button {
 .major__button {
   font-size: var(--font-regular);
   color: var(--color-black);
-  margin: 24px;
+  margin: 12px;
   padding: 4px 48px;
   border: 1px solid var(--color-pink);
   margin-top: 60px;
