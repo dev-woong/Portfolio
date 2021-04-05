@@ -48,9 +48,7 @@ const home = document.querySelector("#home"),
   contactInfo = document.querySelector(".contact__info")
 
 document.addEventListener("scroll", () => {
-  console.log(window.scrollY)
   if (window.scrollY > homeHeight) {
-    console.log("homeHeight : ", homeHeight)
     navbar.classList.add("navbar--dark")
   } else {
     navbar.classList.remove("navbar--dark")
@@ -81,6 +79,7 @@ document.addEventListener("scroll", () => {
     contactHeader.classList.add("contact__header--dark")
     contactInfo.classList.add("contact__info--dark")
   }
+  console.log(window.scrollY)
 })
 
 // scrolling을 아래로 내리면 arrow up 버튼을 나타나게 함
@@ -97,3 +96,9 @@ document.addEventListener("scroll", () => {
 arrowUp.addEventListener("click", () => {
   scrollIntoView("#home")
 })
+
+// // 새로고침 클릭 시 화면 최상단으로
+// window.onbeforeunload = (e) => {
+//   console.log()
+//   window.location.reload()
+// }
