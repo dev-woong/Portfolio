@@ -387,7 +387,7 @@ button {
   position: relative;
   height: 415px;
   width: 500px;
-  margin-top:20px;
+  margin-top: 20px;
   line-height: 32px;
   opacity: 0;
   padding: 0px 24px;
@@ -451,6 +451,7 @@ button {
 
 #project {
   background-color: var(--color-light-white);
+  width: 100%;
   text-align: center;
   padding: 120px 0px;
 }
@@ -466,63 +467,65 @@ button {
 }
 
 .project__majors {
+  height: 62vh;
+  width: 75vw;
+  max-width: 75rem;
+  background-color: white;
+  padding: 3rem;
+  margin: 2rem auto 2rem;
+  border-radius: 1rem;
+}
+
+.major__header h2 {
+  font-size: var(--font-medium);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--color-black);
+}
+
+.major__info {
   display: flex;
-  justify-content: center;
-}
-
-.project__majors .major {
-  height: 500px;
-  width: 500px;
-  position: relative;
-  text-align: center;
-  margin: 100px 20px;
-  opacity: 0;
-}
-
-.project__majors--dark .major {
-  opacity: 1;
-  animation: sizeUp 1s 1;
-}
-
-.project__majors .major:hover .major__cover {
-  display: block;
-}
-
-.major__cover {
+  height: 90%;
   width: 100%;
-  height: 100%;
-  background-color: var(--color-white);
-  position: absolute;
-  display: none;
-  opacity: 90%;
-  text-align: center;
+  margin: 0px auto;
+  /* min-width: 35rem; */
+}
+
+.major__image {
+  width: 50%;
+  margin-right: 3rem;
 }
 
 .major__description {
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  top: 25%;
-}
-
-.major__description p {
-  color: var(--color-pink);
-  margin: 24px 0px;
-}
-
-.major__button {
-  font-size: var(--font-regular);
+  width: calc(50% - 3rem);
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: left;
   color: var(--color-black);
-  margin: 12px;
-  padding: 4px 48px;
-  border: 1px solid var(--color-pink);
-  margin-top: 60px;
 }
 
-.major__button:hover {
-  color: var(--color-white);
-  background-color: var(--color-pink);
-  transition: 300ms linear;
+.major__description-main {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.major__description-sub {
+  display: flex;
+  color: var(--color-black);
+  margin: 10px 0px;
+}
+
+.description-label {
+  font-size: 20px;
+  width: 10rem;
+  font-weight: 800;
+  margin-left: 1rem;
+}
+
+.description-value {
+  font-size: 16px;
 }
 
 /* Contact */

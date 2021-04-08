@@ -12,6 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
   </head>
@@ -122,40 +125,111 @@
     <!-- Project -->
     <section id="project">
       <div class="project__header"><h1>PROJECT</h1>
-        <div class="header__underline"></div></div>
+        <div class="header__underline"></div>
+      </div>
       <div class="project__majors">
-        <div class="major" style="background: url('images/project_tetris.png') center/cover no-repeat">
-          <div class="major__cover">
-            <div class="major__description">
-              <h2>Tetris</h2>
-              <p>Javascript</p>
-              <button class="major__button" onclick="window.open('https://dev-woong.github.io/Tetris/')">enter Page</button>
-              <button class="major__button" onclick="window.open('https://github.com/dev-woong/Tetris')">enter Github</button>
-            </div>
-          </div>
+        <div class="major__header" >
+          <h2>테트리스</h2>
         </div>
-        <div class="major" style="background: url('images/project_COVID.png') center/cover no-repeat">
-          <div class="major__cover">
-            <div class="major__description">
-              <h2>Daejeon COVID19 Map </h2>
-              <p>Javascript / KakaoMap API</p>
-              <button class="major__button" onclick="window.open('https://dev-woong.github.io/DaejeonCOVID19Map/')">enter Page</button>
-              <button class="major__button" onclick="window.open('https://github.com/dev-woong/DaejeonCOVID19Map')">enter Github</button>
+        <div class="major__info">
+          <div class="major__image" style="background: url('images/project_tetris.png') center/cover no-repeat" ></div>
+          <div class="major__description">
+            <div class="major__description-main">
+              <b>VanillaJs로 만든 테트리스</b>입니다.
+              <!-- JS의 기본함수와 -->
             </div>
-          </div>
-        </div>
-        <div class="major" style="background: url('images/Clone_Naver_Memo.png') no-repeat">
-          <div class="major__cover">
-            <div class="major__description">
-              <h2>Clone Naver Memo </h2>
-              <p>React / Firebase</p>
-              <button class="major__button" onclick="window.open('https://clone-project-naver-memo.web.app/')">enter Page</button>
-              <button class="major__button" onclick="window.open('https://github.com/dev-woong/Clone_Naver_Memo')">enter Github</button>
-            </div>
+            <span class="major__description-sub">
+              <div class="description-label">주요 기능</div>
+              <div class="description-value">게임 테트리스, 스코어, 난이도 기능</div>
+            </span>
+            <span class="major__description-sub">
+              <div class="description-label">SKILL</div>
+              <div class="description-value">HTML5, CSS3, JS(ES6)</div>
+            </span>
+            <span class="major__description-sub">
+              <div class="description-label">Deployment</div>
+              <div class="description-value">Github</div>
+            </span>
+            <span class="major__description-sub">
+              <div class="description-label">Domain</div>
+              <div class="description-value" ><a href="https://dev-woong.github.io/Tetris/" style="color:blue">https://dev-woong.github.io/Tetris/</a></div>
+            </span>
+            <span class="major__description-sub">
+              <div class="description-label">GitHub</div>
+              <div class="description-value"><a href="https://github.com/dev-woong/Tetris" style="color:blue">https://github.com/dev-woong/Tetris</a></div>
+            </span>
           </div>
         </div>
       </div>
-    </div>
+      <div class="project__majors">
+        <div class="major__header" >
+          <h2>Daejeon COVID-19 Map</h2>
+        </div>
+        <div class="major__info">
+          <div class="major__image" style="background: url('images/project_COVID.png') center/cover no-repeat" ></div>
+          <div class="major__description">
+            <div class="major__description-main">
+              <b>대전지역의 확진자 방문장소를 디테일하게 보여주는 앱</b>으로 대전지역 코로나 발생자가 급격히 늘었을 때 디테일하게 보여주는 앱이 없어서 만들었습니다.<br><br> 
+              시에서 공개한 데이터를 JSON으로 정리해서 추가했고 현재는 개인정보에 대한 이슈로 정보가 제공되지 않아 업데이트가 멈춘상태입니다. 
+                          
+            </div>
+            <span class="major__description-sub">
+              <div class="description-label">주요 기능</div>
+              <div class="description-value">확진자 리스트, 방문장소 확인 및 반경 표시 </div>
+            </span>
+            <span class="major__description-sub">
+              <div class="description-label">SKILL</div>
+              <div class="description-value">HTML5, CSS3, JS(ES6), jQuery</div>
+            </span>
+            <span class="major__description-sub">
+              <div class="description-label">Deployment</div>
+              <div class="description-value">Github</div>
+            </span>
+            <span class="major__description-sub">
+              <div class="description-label">Domain</div>
+              <div class="description-value" ><a href="https://dev-woong.github.io/Tetris/" style="color:blue">https://dev-woong.github.io/Tetris/</a></div>
+            </span>
+            <span class="major__description-sub">
+              <div class="description-label">GitHub</div>
+              <div class="description-value"><a href="https://github.com/dev-woong/Tetris" style="color:blue">https://github.com/dev-woong/Tetris</a></div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="project__majors">
+        <div class="major__header" >
+          <h2>Clone Naver Memo</h2>
+        </div>
+        <div class="major__info">
+          <div class="major__image" style="background: url('images/Clone_Naver_Memo.png') center/cover no-repeat" ></div>
+          <div class="major__description">
+            <div class="major__description-main">
+              네이버 메모 서비스의 주요 기능을 카피한 앱입니다. <br>
+              <b>React Hook</b>과 <b>JS(ES6)</b>를 숙달하기 위해 만들었습니다. 다른 기능들을 추가로 업데이트 중입니다. 
+            </div>
+            <span class="major__description-sub">
+              <div class="description-label">주요 기능</div>
+              <div class="description-value">메모 추가 및 수정, 삭제</div>
+            </span>
+            <span class="major__description-sub">
+              <div class="description-label">SKILL</div>
+              <div class="description-value">React, JS(ES6),</div>
+            </span>
+            <span class="major__description-sub">
+              <div class="description-label">Deployment</div>
+              <div class="description-value">Github</div>
+            </span>
+            <span class="major__description-sub">
+              <div class="description-label">Domain</div>
+              <div class="description-value" ><a href="https://clone-project-naver-memo.web.app/" style="color:blue">https://dev-woong.github.io/Tetris/</a></div>
+            </span>
+            <span class="major__description-sub">
+              <div class="description-label">GitHub</div>
+              <div class="description-value"><a href="https://github.com/dev-woong/Clone_Naver_Memo" style="color:blue">https://github.com/dev-woong/Tetris</a></div>
+            </span>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Contact -->
     <section id="contact">
