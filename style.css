@@ -493,11 +493,13 @@ button {
 
 .major__image {
   width: 50%;
+  height: 100%;
   margin-right: 3rem;
 }
 
 .major__description {
   width: calc(50% - 3rem);
+  min-width: 515px;
   font-family: "Noto Sans KR", sans-serif;
   text-align: left;
   color: var(--color-black);
@@ -602,6 +604,27 @@ button {
 .arrow-up.visible {
   opacity: 1;
   pointer-events: all;
+}
+
+/* large screen */
+@media screen and (max-width: 1200px) {
+  .project__majors {
+    height: 100vh;
+  }
+
+  .major__info {
+    flex-direction: column;
+  }
+
+  .major__image {
+    width: 100%;
+  }
+
+  .major__description {
+    min-width: 315px;
+    width: 100%;
+    margin: 2rem auto 2rem;
+  }
 }
 
 /* medium screen*/
