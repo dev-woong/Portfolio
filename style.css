@@ -491,15 +491,20 @@ button {
   /* min-width: 35rem; */
 }
 
-.major__image {
-  width: 50%;
+.major__video {
+  width: 45%;
   height: 100%;
   margin-right: 3rem;
+  transition: all 0.2s linear;
+}
+
+.major__video:hover {
+  transform: scale(1.05);
 }
 
 .major__description {
   width: calc(50% - 3rem);
-  min-width: 515px;
+  min-width: 480px;
   font-family: "Noto Sans KR", sans-serif;
   text-align: left;
   color: var(--color-black);
@@ -616,8 +621,10 @@ button {
     flex-direction: column;
   }
 
-  .major__image {
-    width: 100%;
+  .major__video {
+    width: 90%;
+    margin: 0px auto;
+    height: 60%;
   }
 
   .major__description {
